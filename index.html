@@ -28,18 +28,19 @@
 
             <div class="page-content-about" id="pageContent0">
                 <div class="page-content-about-wrapper">
-                    
+
                     <div>
                         <h1>{ About Me }</h1>
-                        Fast learner in the fast paced world. Motivated to learn and to advance professionally. Always ready
-to face the challenges that can reshape me. I am the product of my choices.
+                        Fast learner in the fast paced world. Motivated to learn and to advance professionally. Always
+                        ready
+                        to face the challenges that can reshape me. I am the product of my choices.
                     </div>
                 </div>
             </div>
 
 
             <div class="page-content-skills" id="pageContent1">
-                <div class="page-content-skills-wrapper" >
+                <div class="page-content-skills-wrapper">
                     <div><img src="images/icons/c.png" style="width: 128px;height: 128px;"></div>
                     <div><img src="images/icons/csharp.png" style="width: 128px;height: 128px;"></div>
                     <div><img src="images/icons/html.webp" style="width: 128px;height: 128px;"></div>
@@ -52,38 +53,72 @@ to face the challenges that can reshape me. I am the product of my choices.
             <div class="page-content-edu" id="pageContent2">
                 <div class="page-content-edu-wrapper">
                     <div>
-                   <h3> Nandha Engineering College
-                       </h3
-<p>Nandha College Of Technology
-2017
-B.E.CSE
-CGPA Of 6.7
-                       </p>
-                    
+
                     </div>
-                    <div>sdvdsf</div>
-                    <div>nandha college of tech</div>
-                    <div>786</div>
-                    <div>navarasam</div>
-                    <div>78</div>
+                    <div>
+                        <h3> Nandha College Of Technology
+                        </h3>
+                        <p>
+                            2017<br />
+                            B.E.CSE<br />
+                            CGPA Of 6.7<br />
+                        </p>
+
+                    </div>
+                    <div></div>
+                    <div>
+                        <h3> Navarasam Matric Hr Sec School
+                        </h3>
+                        <p>
+                            2013<br />
+                            H.S.C<br />
+                            82.4%<br />
+                        </p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <h3>Navarasam Matric Hr Sec School
+                        </h3>
+                        <p>
+                            2011<br />
+                            S.S.L.C<br />
+                            80.8%<br />
+                        </p>
+                    </div>
+
+
                 </div>
+
             </div>
 
 
             <div class="page-content-exp" id="pageContent3">
                 <div class="page-content-exp-wrapper">
-                    <div>nutz</div>
-                    <div>nandha engineering</div>
-                    <div>syncfusion</div>
-                    <div>nutz</div>
+                    <div>
+                        <h3>
+                            Nutz </h3>
+                        December-2018 - Present <br />
+                        Developer
+
+
+                    </div>
+                    <div>
+                        <h3> SYNCFUSION SOFTWARE PVT.LTD. </h3>
+                        August-2018 - November-2018 <br />
+                        Software Engineer
+                    </div>
+                    <div>
+                        <h3>Nutz</h3>
+                        June-2017 - July-2018 <br />
+                        Developer
+                    </div>
+
                 </div>
             </div>
 
             <div class="page-content-achi" id="pageContent4">
                 <div class="page-content-achi-wrapper">
-                    <div>Paper presentation</div>
-                    <div>Coding comp</div>
-                    <div>Internship</div>
+                    <div>Gmail Clone</div>
                 </div>
             </div>
 
@@ -99,36 +134,36 @@ CGPA Of 6.7
             </div>
             <div class="navbar-tab">Experience <div></div>
             </div>
-            <div class="navbar-tab">Achievements <div></div>
+            <div class="navbar-tab">Projects <div></div>
             </div>
         </div>
     </div>
 
-<script>
+    <script>
 
-var navItems = document.querySelectorAll('.navbar-tab');
+        var navItems = document.querySelectorAll('.navbar-tab');
 
-for(let i=0;i<navItems.length;i++){
-    navItems[i].addEventListener('click', event => {
-       clearNavActive(navItems);
-       document.getElementById('pageContent'+i).style.display = "block";
-        setDisplayNone(i,navItems.length);
-        navItems[i].classList.add('nav-active');
-    })    
-}
-function setDisplayNone (current , length){
-    for(j=0;j<length;j++){
-        if(j==current) continue;
-        document.getElementById('pageContent'+j).style.display = "none";
-    }
-}
-function clearNavActive (allNavItems){
-    for(i=0;i<allNavItems.length;i++){
-        if(allNavItems[i].classList.contains('nav-active'))
-            allNavItems[i].classList.remove('nav-active');
-    }
-}
-</script>
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener('click', event => {
+                clearNavActive(navItems);
+                document.getElementById('pageContent' + i).style.display = "block";
+                setDisplayNone(i, navItems.length);
+                navItems[i].classList.add('nav-active');
+            })
+        }
+        function setDisplayNone(current, length) {
+            for (j = 0; j < length; j++) {
+                if (j == current) continue;
+                document.getElementById('pageContent' + j).style.display = "none";
+            }
+        }
+        function clearNavActive(allNavItems) {
+            for (i = 0; i < allNavItems.length; i++) {
+                if (allNavItems[i].classList.contains('nav-active'))
+                    allNavItems[i].classList.remove('nav-active');
+            }
+        }
+    </script>
 
 
 </body>
